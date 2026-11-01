@@ -10,7 +10,7 @@ no account, no cloud.
 
 [![CI](https://github.com/NelsonScott/remote/actions/workflows/ci.yml/badge.svg)](https://github.com/NelsonScott/remote/actions/workflows/ci.yml)
 [![Release](https://img.shields.io/github/v/release/NelsonScott/remote)](https://github.com/NelsonScott/remote/releases/latest)
-[![COPR build](https://copr.fedorainfracloud.org/coprs/scottnelson/remote/package/remote/status_image/last_build.png)](https://copr.fedorainfracloud.org/coprs/scottnelson/remote/)
+[![COPR build](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fcopr.fedorainfracloud.org%2Fapi_3%2Fpackage%3Fownername%3Dscottnelson%26projectname%3Dremote%26packagename%3Dremote%26with_latest_build%3DTrue&query=%24.builds.latest.state&label=copr&color=blue)](https://copr.fedorainfracloud.org/coprs/scottnelson/remote/)
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
 <img src="docs/screenshot.png" width="320" alt="Remote connected to a Roku TV: the remote tiles and the channel grid">
