@@ -9,8 +9,8 @@ network, no account, no cloud.
 ![Pressing keys on the remote](docs/demo.gif)
 
 > Not affiliated with or endorsed by Roku, Inc. "Roku" is a trademark of
-> Roku, Inc. Most of this code was written by Claude (Anthropic's model) working
-> with me; I reviewed it and use it daily.
+> Roku, Inc. Built with claude co-pilot (like most things these days); I reviewed
+> it, made sure the test suite is solid, and did manual testing against my own Roku TV.
 
 Features:
 
