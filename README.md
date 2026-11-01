@@ -18,30 +18,21 @@ no account, no cloud.
 </div>
 
 > Not affiliated with or endorsed by Roku, Inc. "Roku" is a trademark of
-> Roku, Inc. Built with claude co-pilot (like most things these days); I reviewed
+> Roku, Inc. Built with Claude as co-pilot (like most things these days); I reviewed
 > it, made sure the test suite is solid, and did manual testing against my own Roku TV.
 
 Features:
 
-- Layout modelled on [Roam](https://github.com/msdrigg/roam) by Scott Driggers (macOS/iOS;
-  none of its code or assets are used): rounded square tiles on one grid
-  (Back / Power / Home, a D-pad plus with Ok, then Instant Replay, Options
-  (*), Search, Rewind, Play/Pause, Fast-forward, Volume down, Mute, Volume
-  up), purple line glyphs, a red Power tile, charcoal in dark mode and
-  libadwaita surfaces in light mode. Volume down / up show a large − / +.
-- Press-and-hold on the D-pad, volume and seek buttons (sent as
-  `keydown` / `keyup`, so the TV auto-repeats like the physical remote).
-- A text field that types straight into the focused TV text box as you type
-  (`Lit_` keypresses, Backspace, Enter).
-- Channel grid built from `/query/apps` (icon tiles with the name below),
-  icons cached per device.
+- The full remote: D-pad, Back, Home, Replay, Options, Search, playback and
+  volume. Press and hold repeats like the physical remote.
+- Type into TV search boxes from your keyboard.
+- Channel grid built from what your TV reports, icons cached per device.
 - Keyboard control while the window is focused (Ctrl+? lists the keys).
-- SSDP discovery (`M-SEARCH roku:ecp`), falling back to a unicast M-SEARCH
-  of the local /24 when a host firewall drops replies to the multicast query
-  (Fedora's default zone does). The last device is cached and tried first.
-- Online / offline dot next to the TV name and on the device card, polled
-  every 10 s; long device names wrap instead of being cut off. Several TVs
-  on the network: pick one under "TVs" in the header menu.
+- Finds the TV by itself (SSDP), falling back to a unicast sweep of your /24
+  when a strict firewall zone drops the multicast replies. Several TVs: pick
+  one under "TVs" in the header menu.
+- Layout modelled on [Roam](https://github.com/msdrigg/roam) by Scott Driggers
+  (macOS/iOS; none of its code or assets are used).
 
 ## Install
 
@@ -64,9 +55,10 @@ scripts/install.sh --uninstall
 
 `install.sh` needs only `flatpak`. On first run it installs, per user from
 Flathub, the GNOME 50 SDK, the Rust SDK extension and `org.flatpak.Builder`
-(unless a host `flatpak-builder` exists). The app gets network access (SSDP
-and ECP) and the display sockets, nothing else. Its config and icon cache
-live in `~/.var/app/xyz.scottnelson.Remote/`.
+(unless a host `flatpak-builder` exists). Flatpak permissions: network (SSDP
+and ECP on your LAN), the Wayland and fallback X11 display sockets with the
+shared memory they need, and GPU access for GTK4 rendering. No filesystem
+access; config and icon cache live in `~/.var/app/xyz.scottnelson.Remote/`.
 
 ### RPM from COPR (Fedora)
 
