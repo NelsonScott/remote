@@ -44,7 +44,7 @@ Download `remote.flatpak` from the [latest release](https://github.com/NelsonSco
 flatpak install --user remote.flatpak      # pulls the GNOME 50 runtime from Flathub if needed
 ```
 
-A Flathub listing is submitted; once it is accepted this becomes `flatpak install flathub xyz.scottnelson.Remote`.
+A Flathub listing is planned once the project has some history behind it.
 
 ### Flatpak from source (no root)
 
