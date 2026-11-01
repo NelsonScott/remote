@@ -1,15 +1,21 @@
+<div align="center">
+
+<img src="data/icons/hicolor/128x128/apps/xyz.scottnelson.Remote.png" width="96" alt="">
+
 # Remote
+
+**A Roku remote for Linux.** A small native GNOME app (Rust + GTK4 + libadwaita)
+that talks the plain-HTTP Roku ECP API on your LAN. Nothing leaves the network,
+no account, no cloud.
 
 [![CI](https://github.com/NelsonScott/remote/actions/workflows/ci.yml/badge.svg)](https://github.com/NelsonScott/remote/actions/workflows/ci.yml)
 [![Release](https://img.shields.io/github/v/release/NelsonScott/remote)](https://github.com/NelsonScott/remote/releases/latest)
 [![COPR build](https://copr.fedorainfracloud.org/coprs/scottnelson/remote/package/remote/status_image/last_build.png)](https://copr.fedorainfracloud.org/coprs/scottnelson/remote/)
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
-A Roku remote for Linux. A small native GNOME app (Rust + GTK4 + libadwaita)
-that talks the plain-HTTP Roku ECP API on your LAN. Nothing leaves the
-network, no account, no cloud.
-
 <img src="docs/screenshot.png" width="320" alt="Remote connected to a Roku TV: the remote tiles and the channel grid">
+
+</div>
 
 > Not affiliated with or endorsed by Roku, Inc. "Roku" is a trademark of
 > Roku, Inc. Built with claude co-pilot (like most things these days); I reviewed
