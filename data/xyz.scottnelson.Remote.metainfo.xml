@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop-application">
+  <id>xyz.scottnelson.Remote</id>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>MIT</project_license>
+  <name>Remote</name>
+  <summary>A Roku remote for your desktop</summary>
+  <developer id="xyz.scottnelson">
+    <name>Scott Nelson</name>
+  </developer>
+  <description>
+    <p>
+      A small native GNOME remote for Roku TVs. It finds the TV on your local
+      network and talks to it over the plain HTTP External Control Protocol.
+      No account, no cloud, nothing leaves your network.
+    </p>
+    <ul>
+      <li>D-pad, Back, Home, Replay, Search, Options, playback and volume</li>
+      <li>Press and hold to repeat, like the physical remote</li>
+      <li>Type into TV search boxes from your keyboard</li>
+      <li>Launch channels from a grid of their icons</li>
+      <li>Full keyboard control while the window is focused</li>
+    </ul>
+    <p>
+      Not affiliated with or endorsed by Roku, Inc. "Roku" is a trademark of
+      Roku, Inc.
+    </p>
+  </description>
+  <url type="homepage">https://github.com/NelsonScott/remote</url>
+  <url type="bugtracker">https://github.com/NelsonScott/remote/issues</url>
+  <url type="vcs-browser">https://github.com/NelsonScott/remote</url>
+  <launchable type="desktop-id">xyz.scottnelson.Remote.desktop</launchable>
+  <icon type="stock">xyz.scottnelson.Remote</icon>
+  <screenshots>
+    <screenshot type="default">
+      <image>https://raw.githubusercontent.com/NelsonScott/remote/v0.2.0/docs/screenshot.png</image>
+      <caption>The remote in dark and light mode</caption>
+    </screenshot>
+  </screenshots>
+  <branding>
+    <color type="primary" scheme_preference="light">#d9ccff</color>
+    <color type="primary" scheme_preference="dark">#1f2124</color>
+  </branding>
+  <content_rating type="oars-1.1"/>
+  <supports>
+    <control>pointing</control>
+    <control>keyboard</control>
+  </supports>
+  <requires>
+    <display_length compare="ge">300</display_length>
+  </requires>
+  <categories>
+    <category>AudioVideo</category>
+    <category>Video</category>
+  </categories>
+  <keywords>
+    <keyword>roku</keyword>
+    <keyword>remote</keyword>
+    <keyword>tv</keyword>
+  </keywords>
+  <releases>
+    <release version="0.2.0" date="2026-11-01">
+      <description>
+        <p>First public release, now called Remote. Saved settings from the
+        earlier private build are picked up automatically.</p>
+      </description>
+    </release>
+    <release version="0.1.1" date="2026-10-31">
+      <description>
+        <p>A busy TV no longer shows as unreachable after launching a channel.
+        Dark by default, with an option to follow the system theme. New app
+        icon.</p>
+      </description>
+    </release>
+    <release version="0.1.0" date="2026-10-31"/>
+  </releases>
+</component>

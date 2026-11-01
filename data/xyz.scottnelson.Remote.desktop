@@ -1,0 +1,13 @@
+[Desktop Entry]
+Type=Application
+Name=Remote
+GenericName=Roku Remote
+Comment=Control your Roku TV from the desktop
+Exec=remote
+Icon=xyz.scottnelson.Remote
+Terminal=false
+Categories=AudioVideo;Video;GTK;
+Keywords=roku;remote;tv;television;
+StartupNotify=true
+StartupWMClass=remote
+DBusActivatable=false

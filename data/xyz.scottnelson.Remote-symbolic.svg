@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Roku symbolic icon (16 px): remote body with a D-pad ring, OK and two
+     rows of keys cut out. Fill only, so GTK can recolour it. -->
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+  <path fill="#2e3436" fill-rule="evenodd" d="M6.5 0.5h3a2.5 2.5 0 0 1 2.5 2.5v10a2.5 2.5 0 0 1-2.5 2.5h-3a2.5 2.5 0 0 1-2.5-2.5v-10a2.5 2.5 0 0 1 2.5-2.5z M8 3a2.75 2.75 0 1 0 0 5.5a2.75 2.75 0 1 0 0-5.5z M8 4.6a1.15 1.15 0 1 1 0 2.3a1.15 1.15 0 1 1 0-2.3z M5.75 10h1.75v1.25h-1.75z M8.5 10h1.75v1.25h-1.75z M5.75 12.5h1.75v1.25h-1.75z M8.5 12.5h1.75v1.25h-1.75z"/>
+</svg>

@@ -1,0 +1,37 @@
+[package]
+name = "remote"
+version = "0.2.0"
+edition = "2021"
+description = "Remote: a Roku remote for Linux (GNOME, GTK4)"
+license = "MIT"
+default-run = "remote"
+
+[lib]
+name = "remote"
+path = "src/lib.rs"
+
+[[bin]]
+name = "remote"
+path = "src/main.rs"
+
+[[bin]]
+name = "fake-roku"
+path = "src/bin/fake_roku.rs"
+
+[dependencies]
+gtk = { package = "gtk4", version = "=0.11.5", features = ["v4_18"] }
+adw = { package = "libadwaita", version = "=0.9.2", features = ["v1_8"] }
+ureq = { version = "=3.5.0", default-features = false }
+roxmltree = "=0.21.2"
+serde = { version = "=1.0.229", features = ["derive"] }
+toml = "=1.1.8"
+dirs = "=7.0.0"
+tiny_http = "=0.12.0"
+log = "=0.4.35"
+env_logger = { version = "=0.11.11", default-features = false, features = ["auto-color", "humantime"] }
+percent-encoding = "=2.3.2"
+
+[profile.release]
+lto = "thin"
+codegen-units = 1
+strip = true
